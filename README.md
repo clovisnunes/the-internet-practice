@@ -12,10 +12,10 @@ Deployed and available at http://the-internet.herokuapp.com.
 - Basic Auth (user and pass: admin) :heavy_check_mark:
 - Broken Images :heavy_check_mark:
 - Challenging DOM
-- Checkboxes
+- Checkboxes :heavy_check_mark:
 - Context Menu
 - Digest Authentication (user and pass: admin)
-- Disappearing Elements :heavy_check_mark:
+- Disappearing Elements
 - Drag and Drop
 - Dropdown :heavy_check_mark:
 - Dynamic Content
