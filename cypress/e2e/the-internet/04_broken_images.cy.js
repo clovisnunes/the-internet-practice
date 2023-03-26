@@ -3,10 +3,10 @@
 context('Broken images', () => {
     beforeEach(() => {
         cy.visit('http://the-internet.herokuapp.com/')
+        cy.get('ul a:contains("Broken Images")').click()
     })
 
-    it('Broken images', () => {
-        cy.get('ul a:contains("Broken Images")').click()
+    it('Image 1', () => {
 
         // image 1
         cy.get('div h3 ~ img:eq(0)').then($img => {
@@ -19,6 +19,10 @@ context('Broken images', () => {
             cy.request({url: currentSrc, failOnStatusCode: false}).its('status').should('be.equal', 200)
         })
 
+    })
+
+    it('Image 2', () => {
+
         // image 2
         cy.get('div h3 ~ img:eq(1)').then($img => {
             let currentSrc = $img[0].src
@@ -29,6 +33,10 @@ context('Broken images', () => {
 
             cy.request({url: currentSrc, failOnStatusCode: false}).its('status').should('be.equal', 200)
         })
+
+    })
+
+    it('Image 2', () => {
 
         // image 3
         cy.get('div h3 ~ img:eq(2)').then($img => {

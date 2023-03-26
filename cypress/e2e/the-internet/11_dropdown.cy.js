@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 
-context('Add remove elements', () => {
+context('Dropdown', () => {
     beforeEach(() => {
         cy.visit('http://the-internet.herokuapp.com/')
+        cy.get('ul a:contains("Dropdown")').click()
     })
 
     it('Choose option 1', () => {
-        cy.get('ul a:contains("Dropdown")').click()
-
         // selecting option 1
 
         cy.get('select#dropdown')
@@ -19,8 +18,6 @@ context('Add remove elements', () => {
     })
 
     it('Choose option 2', () => {
-        cy.get('ul a:contains("Dropdown")').click()
-
         // selecting option 2
 
         cy.get('select#dropdown')
