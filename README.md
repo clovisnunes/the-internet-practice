@@ -13,7 +13,7 @@ Deployed and available at http://the-internet.herokuapp.com.
 - Broken Images :heavy_check_mark:
 - Challenging DOM
 - Checkboxes :heavy_check_mark:
-- Context Menu
+- Context Menu :heavy_check_mark:
 - Digest Authentication (user and pass: admin)
 - Disappearing Elements
 - Drag and Drop
